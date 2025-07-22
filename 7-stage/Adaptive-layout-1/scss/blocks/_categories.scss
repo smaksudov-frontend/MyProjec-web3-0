@@ -1,0 +1,36 @@
+.categories {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @include vp-1023 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px 24px;
+    }
+  }
+
+  &__link {
+    outline: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+
+    &:hover {
+     color: $color-royal-blue ;
+    }
+
+    &:focus-visible {
+      color: $color-royal-blue ;
+    }
+  }
+}
