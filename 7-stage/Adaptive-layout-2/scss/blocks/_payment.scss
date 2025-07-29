@@ -1,3 +1,5 @@
+@use "../global/variables";
+
 .payment {
   padding: 100px 0;
 
@@ -25,7 +27,7 @@
   &__picture {
     display: block;
     margin: 0 0 20px 0;
-    background-color: $color-white-smoke-1;
+    background-color: variables.$color-white-smoke-1;
     border-radius: 16px;
   }
 
@@ -39,6 +41,6 @@
     margin: 0;
     font-size: 15px;
     line-height: 20px;
-    color: $color-storm-grey-1;
+    color: variables.$color-storm-grey-1;
   }
 }

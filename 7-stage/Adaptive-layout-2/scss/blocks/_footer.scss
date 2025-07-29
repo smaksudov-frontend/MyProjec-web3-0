@@ -1,6 +1,8 @@
+@use "../global/variables";
+
 .footer {
   padding: 40px 0;
-  background-color: $color-solitude-2;
+  background-color: variables.$color-solitude-2;
 
   &__wrapper {
     display: grid;
@@ -55,7 +57,7 @@
   &__language-link {
     font-size: 13px;
     line-height: 16px;
-    color: $color-storm-grey-2;
+    color: variables.$color-storm-grey-2;
   }
 
   &__feedback {
@@ -78,7 +80,7 @@
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
-    color: $color-royal-blue-1;
+    color: variables.$color-royal-blue-1;
   }
 
   &__nav-list {
@@ -120,7 +122,7 @@
   &__copyright-date {
     font-size: 10px;
     line-height: 12px;
-    color: $color-storm-grey-3;
+    color: variables.$color-storm-grey-3;
   }
 
   &__language-link {

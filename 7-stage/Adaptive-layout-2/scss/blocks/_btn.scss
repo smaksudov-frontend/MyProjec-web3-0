@@ -1,14 +1,16 @@
+@use "../global/variables";
+
 .btn {
   outline: none;
   padding: 14px;
-  color: $color-white;
+  color: variables.$color-white;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   text-align: center;
   border: none;
-  background-color: $color-black-russian;
+  background-color: variables.$color-black-russian;
   border-radius: 8px;
   cursor: pointer;
 
@@ -16,24 +18,24 @@
     padding: 18px;
     font-size: 15px;
     line-height: 20px;
-    background-color: $color-royal-blue-1;
+    background-color: variables.$color-royal-blue-1;
   }
 
   &--third {
-    color: $color-black-russian;
+    color: variables.$color-black-russian;
     padding: 14px;
     font-size: 15px;
     line-height: 20px;
-    background-color: $color-white;
+    background-color: variables.$color-white;
   }
 
   &--fourth {
-    color: $color-black-russian;
-    background-color: $color-solitude-1;
+    color: variables.$color-black-russian;
+    background-color: variables.$color-solitude-1;
   }
 
   &--fifth {
-    color: $color-black-russian;
+    color: variables.$color-black-russian;
     background-color: transparent;
   }
 

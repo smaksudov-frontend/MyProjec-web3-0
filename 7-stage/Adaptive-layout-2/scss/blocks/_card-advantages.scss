@@ -1,3 +1,5 @@
+@use "../global/variables";
+
 .card-advantages {
   display: flex;
   align-items: center;
@@ -12,25 +14,25 @@
   }
 
   &--heavenly {
-    background-color: $color-columbia-blue;
+    background-color: variables.$color-columbia-blue;
   }
 
   &--purple {
-    background-color: $color-portage;
+    background-color: variables.$color-portage;
   }
 
   &--blue {
-    color: $color-white;
-    background-color: $color-cornflower-blue;
+    color: variables.$color-white;
+    background-color: variables.$color-cornflower-blue;
   }
 
   &--dark-gray {
-    color: $color-white;
-    background-color: $color-manatee-1;
+    color: variables.$color-white;
+    background-color: variables.$color-manatee-1;
   }
 
   &--light-gray {
-    background-color: $color-solitude-2;
+    background-color: variables.$color-solitude-2;
   }
 
   &--small {

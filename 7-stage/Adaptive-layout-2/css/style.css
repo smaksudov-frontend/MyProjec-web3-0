@@ -73,7 +73,8 @@ a {
 */
 abbr[title] {
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
   border-bottom: none; /* 1 */
 }
 
@@ -362,7 +363,8 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -392,7 +394,7 @@ a {
 /* Blocks */
 /* ------------------------------------ */
 .header {
-  padding: 16px;
+  padding: 16px 0;
 }
 .header__wrapper {
   display: flex;
@@ -408,7 +410,8 @@ a {
   margin: 0 24px 0 0;
   border: 1px solid #DBDFEC;
   border-radius: 12px;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   padding: 5px;
 }
 .header__btn {
@@ -418,7 +421,8 @@ a {
   outline: none;
   display: flex;
   align-items: center;
-  column-gap: 12px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
   border: 1px solid #DBDFEC;
   border-radius: 12px;
   padding: 17px 22px 17px 21px;
@@ -477,7 +481,8 @@ a {
 .hero__wrapper {
   display: flex;
   align-items: center;
-  column-gap: 180px;
+  -moz-column-gap: 180px;
+       column-gap: 180px;
 }
 .hero__content {
   padding: 100px 0;
@@ -554,7 +559,8 @@ a {
 .card-advantages {
   display: flex;
   align-items: center;
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   height: 100%;
   border-radius: 16px;
 }
@@ -711,7 +717,8 @@ a {
 .footer__wrapper {
   display: grid;
   grid-template-columns: 191px 340px 1fr;
-  column-gap: 129px;
+  -moz-column-gap: 129px;
+       column-gap: 129px;
   align-items: start;
 }
 .footer__left {
@@ -758,7 +765,8 @@ a {
 .footer__location-link {
   display: flex;
   align-items: center;
-  column-gap: 4px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
   font-size: 13px;
   font-weight: 500;
   line-height: 16px;
@@ -801,7 +809,8 @@ a {
 .footer__language-link {
   display: flex;
   align-items: center;
-  column-gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 
 .socials {
@@ -818,6 +827,4 @@ a {
   height: 40px;
   border-radius: 50%;
   background-color: #E3E5EB;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,7 @@
+@use "../global/variables";
+
 .hero {
-  background-color: $color-solitude-2;
+  background-color: variables.$color-solitude-2;
 
   &--partners {
     .hero__heading {
@@ -38,7 +40,7 @@
   }
 
   &__heading-highlight {
-    color: $color-royal-blue-1;
+    color: variables.$color-royal-blue-1;
   }
 
   &__description {
