@@ -1,7 +1,12 @@
 @use "../global/variables";
+@use "../global/mixins" as *;
 
 .payment {
   padding: 100px 0;
+
+  @include vp-1023 {
+    padding: 80px 0 80px 0;
+  }
 
   &--partners {
     padding: 0 0 100px;
@@ -13,6 +18,13 @@
     text-align: center;
     font-size: 32px;
     line-height: 36px;
+
+    @include vp-1023{
+      margin: 0 auto 30px;
+      font-size: 22px;
+      line-height: 28px;
+      max-width: 100%;
+    }
   }
 
   &__list {
@@ -22,6 +34,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @include vp-1023 {
+      gap: 16px;
+    }
   }
 
   &__picture {
@@ -29,12 +45,30 @@
     margin: 0 0 20px 0;
     background-color: variables.$color-white-smoke-1;
     border-radius: 16px;
+
+    @include vp-1023 {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &__image {
+
+    @include vp-1023 {
+    width: 165px;
+    height: 188px;
+  }
   }
 
   &__heading {
     margin: 0 0 8px 0;
     font-size: 20px;
     line-height: 24px;
+
+    @include vp-1023 {
+      margin: 0 0 5px 0;
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   &__description {
@@ -42,5 +76,10 @@
     font-size: 15px;
     line-height: 20px;
     color: variables.$color-storm-grey-1;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }

@@ -1,4 +1,5 @@
 @use "../global/variables";
+@use "../global/mixins" as *;
 
 .hero {
   background-color: variables.$color-solitude-2;
@@ -6,13 +7,27 @@
   &--partners {
     .hero__heading {
       margin: 0 0 48px 0;
+
+      @include vp-1023 {
+        margin: 0 0 40px 0;
+      }
     }
 
-    .hero__wrapper {
+    .hero__content {
+
+      @include vp-1023{
+      padding: 50px 0 50px 0;
+      }
     }
 
     .hero__btn {
       width: 258px;
+
+    @include vp-1023 {
+      width: 233px;
+    }
+
+
     }
   }
 
@@ -20,6 +35,10 @@
     display: flex;
     align-items: center;
     column-gap: 180px;
+
+    @include vp-1023 {
+      gap: 0;
+    }
   }
 
   &__content {
@@ -27,16 +46,30 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include vp-1023 {
+      padding: 58px 30px 58px 0 ;
+    }
   }
 
   &__btn {
     width: 272px;
+
+          @include vp-1023 {
+        width: 244px;
+      }
   }
 
   &__heading {
     margin: 0 0 24px;
     font-size: 40px;
     line-height: 48px;
+
+          @include vp-1023 {
+        margin: 0 0 20px 0;
+        font-size: 32px;
+        line-height: 38px;
+      }
   }
 
   &__heading-highlight {
@@ -47,5 +80,26 @@
     margin: 0 0 48px;
     font-size: 18px;
     line-height: 24px;
+
+    @include vp-1023 {
+      margin: 0 0 40px 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__image {
+    width: 660px;
+    height: 640px;
+
+    @include vp-1023 {
+      width: 420px;
+      height: 410px;
+    }
+
+    @include vp-767 {
+      width: 375px;
+      height: 364px;
+    }
   }
 }

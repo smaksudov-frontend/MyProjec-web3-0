@@ -1,4 +1,6 @@
 @use "../global/variables";
+@use "../global/mixins" as *;
+
 
 .btn {
   outline: none;
@@ -14,11 +16,22 @@
   border-radius: 8px;
   cursor: pointer;
 
+  @include vp-1023 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   &--second {
     padding: 18px;
     font-size: 15px;
     line-height: 20px;
     background-color: variables.$color-royal-blue-1;
+
+    @include vp-1023 {
+      padding: 16px;
+      font-size: 13px;
+      line-height: 16px;
+    }
   }
 
   &--third {
@@ -27,6 +40,12 @@
     font-size: 15px;
     line-height: 20px;
     background-color: variables.$color-white;
+
+    @include vp-1023 {
+      padding: 12px;
+      font-size: 13px;
+      line-height: 16px;
+    }
   }
 
   &--fourth {
@@ -37,6 +56,8 @@
   &--fifth {
     color: variables.$color-black-russian;
     background-color: transparent;
+
+  
   }
 
   &--sixth {

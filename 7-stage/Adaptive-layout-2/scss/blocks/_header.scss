@@ -1,7 +1,8 @@
 @use "../global/variables";
+@use "../global/mixins" as *;
 
 .header {
-  padding: 16px 0;
+  padding: 16px 0 20px 0;
 
   &__wrapper {
     display: flex;
@@ -21,10 +22,16 @@
     border-radius: 12px;
     column-gap: 20px;
     padding: 5px;
+
+    @include vp-1023 {
+      border: none;
+    }
   }
 
   &__btn {
     width: 128px;
+
+ 
   }
 
   &__language-link {
@@ -35,5 +42,15 @@
     border: 1px solid variables.$color-hawkes-blue;
     border-radius: 12px;
     padding: 17px 22px 17px 21px;
+
+    @include vp-1023 {
+      display: none;
+    }
   }
+
+  &__btn--active{
+    display: none;
+  }
+
+ 
 }
