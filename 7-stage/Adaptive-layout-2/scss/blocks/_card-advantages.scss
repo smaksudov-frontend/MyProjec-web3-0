@@ -11,6 +11,7 @@
   @include vp-1023 {
     flex-direction: column;
     gap: 10px;
+    max-height: 408px;
   }
 
   &--reverse {
@@ -25,10 +26,18 @@
         padding: 30px 15px 0 15px;
       }
     }
+    .card-advantages__picture {
+      
+
+      @include vp-1023 {
+       padding: 0 48px;
+       
+      }
+    }
+
     .card-advantages__image {
       @include vp-1023 {
-        width: 340px;
-        height: 300px;
+     
       }
     }
 
@@ -49,7 +58,7 @@
     @include vp-1023 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-        
+      gap: 23px;  
       
     }
 
@@ -60,11 +69,21 @@
         height: 300px;
     }
     }
+
+    .card-advantages__content {
+      
+
+      @include vp-1023 {
+        padding: 10px 15px 15px 0;
+      }
+    }
   }
 
   &--dark-gray {
     color: variables.$color-white;
     background-color: variables.$color-manatee-1;
+
+   
   }
 
   &--light-gray {
@@ -76,14 +95,30 @@
     grid-column: span 1;
     min-height: 640px;
 
+    @include vp-1023 {
+      min-height: 408px;
+    }
+
     .card-advantages__content {
       padding: 60px;
 
+      @include vp-1023 {
+        
+        padding: 30px 30px 0 30px;
+      }
+
 
     }
+   
 
     .card-advantages__picture {
       margin: auto 0 0 0;
+
+      @include vp-1023 {
+        padding: 0;
+        margin: 0;
+        margin-top: auto;
+      }
     }
   }
 
@@ -98,11 +133,20 @@
     row-gap: 16px;
     margin: 0;
     padding: 0 0 0 22px;
+
+    @include vp-1023 {
+      row-gap: 10px ;
+    }
   }
 
   &__subitem {
     font-size: 18px;
     line-height: 24px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__content {
@@ -112,7 +156,7 @@
     align-items: flex-start;
 
           @include vp-1023 {
-        padding: 0 15px 30px 15px;
+        padding: 0px 15px 30px 15px;
       }
   }
 
@@ -149,12 +193,12 @@
     }
   }
 
-  &__image {
+  &__picture {
 
     @include vp-1023 {
-    
-      width: 255px;
-      height: 220px;
+      padding: 0 48px;
     }
   }
+
+  
 }

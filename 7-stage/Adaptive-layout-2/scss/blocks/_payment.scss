@@ -10,6 +10,10 @@
 
   &--partners {
     padding: 0 0 100px;
+
+    @include vp-1023 {
+      padding: 0 0 80px;
+    }
   }
 
   &__title {
