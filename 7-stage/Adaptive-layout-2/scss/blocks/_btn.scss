@@ -1,7 +1,6 @@
 @use "../global/variables";
 @use "../global/mixins" as *;
 
-
 .btn {
   outline: none;
   padding: 14px;
@@ -39,6 +38,19 @@
     }
   }
 
+  &--second:hover {
+    background-color: variables.$color-free-speech-blue;
+  }
+
+  &--second:focus-visible {
+    background-color: variables.$color-free-speech-blue;
+  }
+   &--second:disabled {
+    background-color: variables.$color-white-smoke-2;
+    color:variables.$color-manatee-2 ;
+   }
+
+
   &--third {
     color: variables.$color-black-russian;
     padding: 14px;
@@ -53,6 +65,18 @@
     }
   }
 
+  &--third:hover {
+    background-color: variables.$color-solitude-4;
+  }
+
+  &--third:focus-visible {
+    background-color: variables.$color-solitude-4;
+  }
+
+    &--third:disabled {
+    color: variables.$color-manatee-2;
+  }
+
   &--fourth {
     color: variables.$color-black-russian;
     background-color: variables.$color-solitude-1;
@@ -61,13 +85,30 @@
   &--fifth {
     color: variables.$color-black-russian;
     background-color: transparent;
+  }
+
+  &--fifth:hover {
+    background-color: variables.$color-solitude-4;
+  }
+
+  &--fifth:focus-visible {
+    background-color: variables.$color-solitude-4;
+  }
 
   
-  }
 
   &--sixth {
     padding: 12px;
     font-size: 13px;
     line-height: 16px;
   }
+
+  &--sixth:hover {
+    background-color: variables.$color-blue-zodiac;
+  }
+
+  &--sixth:focus-visible {
+    background-color: variables.$color-blue-zodiac;
+  }
+
 }

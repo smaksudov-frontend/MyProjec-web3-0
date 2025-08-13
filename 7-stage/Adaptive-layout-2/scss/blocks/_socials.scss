@@ -20,4 +20,13 @@
     border-radius: 50%;
     background-color: variables.$color-solitude-3;
   }
+
+  &__link:hover {
+    background-color: variables.$color-link-water;
+  }
+
+   &__link:focus-visible {
+    background-color: variables.$color-link-water;
+  }
 }
+

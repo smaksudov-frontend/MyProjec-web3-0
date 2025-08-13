@@ -26,12 +26,20 @@
 
     &--grid {
       grid-template-columns: repeat(2, 1fr);
+
+      @include vp-767 {
+        grid-template-columns: 1fr;
+      }
     }
   }
 
   &__main-item {
     &--flat {
       grid-column: span 2;
+
+      @include vp-767 {
+        grid-column: auto;
+      }
     }
   }
 
@@ -53,8 +61,6 @@
       gap: 30px;
     }
   }
-
-
 
   &__list-item {
     display: flex;

@@ -14,20 +14,25 @@
     }
 
     .hero__content {
+      @include vp-1023 {
+        padding: 50px 0 50px 0;
+      }
 
-      @include vp-1023{
-      padding: 50px 0 50px 0;
+      @include vp-767 {
+        padding: 40px 0 0 0;
       }
     }
 
     .hero__btn {
       width: 258px;
 
-    @include vp-1023 {
-      width: 233px;
-    }
+      @include vp-1023 {
+        width: 233px;
+      }
 
-
+      @include vp-767 {
+        top: 194px;
+      }
     }
   }
 
@@ -41,13 +46,9 @@
     }
 
     @include vp-767 {
-      
       flex-direction: column;
       text-align: center;
       position: relative;
-     
-      
-      
     }
   }
 
@@ -58,29 +59,28 @@
     align-items: flex-start;
 
     @include vp-1023 {
-      padding: 58px 30px 58px 0 ;
+      padding: 58px 30px 58px 0;
     }
 
     @include vp-767 {
       padding: 40px 15px 0 15px;
-     
     }
   }
 
   &__btn {
     width: 272px;
 
-          @include vp-1023 {
-        width: 244px;
-      }
+    @include vp-1023 {
+      width: 244px;
+    }
 
-      @include vp-767 {
-       margin: 0 auto ;
-       position: absolute;
-       top: 262px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
+    @include vp-767 {
+      margin: 0 auto;
+      position: absolute;
+      top: 262px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__heading {
@@ -88,11 +88,11 @@
     font-size: 40px;
     line-height: 48px;
 
-          @include vp-1023 {
-        margin: 0 0 20px 0;
-        font-size: 32px;
-        line-height: 38px;
-      }
+    @include vp-1023 {
+      margin: 0 0 20px 0;
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 
   &__heading-highlight {
@@ -121,7 +121,7 @@
     }
 
     @include vp-767 {
-       width: 375px;
+      width: 375px;
       height: 325px;
     }
   }

@@ -7,7 +7,6 @@
 
   @include vp-767 {
     padding: 30px 0;
-
   }
 
   &__wrapper {
@@ -17,16 +16,15 @@
     align-items: start;
 
     @include vp-1023 {
-      grid-template-columns: 191px  1fr;
+      grid-template-columns: 191px 1fr;
       gap: 105px;
     }
 
     @include vp-767 {
-          display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
     }
   }
 
@@ -35,7 +33,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    @include vp-767{
+    @include vp-767 {
       align-items: center;
     }
   }
@@ -50,11 +48,10 @@
   }
 
   &__logo-image {
-
     @include vp-767 {
-    width: 98px;
-    height: 42px;
-    padding: 0 0 5px 0;
+      width: 98px;
+      height: 42px;
+      padding: 0 0 5px 0;
     }
   }
 
@@ -68,7 +65,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
     @include vp-767 {
       align-items: center;
     }
@@ -81,9 +78,7 @@
     @include vp-767 {
       row-gap: 20px;
       margin: 0 0 20px;
-      
     }
-
   }
 
   &__phone {
@@ -104,6 +99,15 @@
       line-height: 22px;
     }
   }
+
+  &__phone-link:hover {
+    color: variables.$color-royal-blue-1;
+  } 
+
+    &__phone-link:focus-visible {
+    color: variables.$color-royal-blue-1;
+  } 
+
 
   &__phone-text,
   &__feedback-text,
@@ -153,6 +157,14 @@
     color: variables.$color-royal-blue-1;
   }
 
+  &__location-link:hover {
+    color: variables.$color-royal-blue-2;
+  }
+
+   &__location-link:focus-visible {
+    color: variables.$color-royal-blue-2;
+  }
+
   &__nav-list {
     display: grid;
     grid-template-columns: repeat(2, 140px);
@@ -162,7 +174,7 @@
     list-style: none;
 
     @include vp-1023 {
-      display: none
+      display: none;
     }
   }
 
@@ -171,11 +183,19 @@
     line-height: 18px;
   }
 
+  &__nav-link:hover {
+    color: variables.$color-royal-blue-1;
+  }
+
+    &__nav-link:focus-visible {
+    color: variables.$color-royal-blue-1;
+  }
+
   &__right {
     padding: 20px 40px 0 51px;
 
     @include vp-1023 {
-      padding:20px 0 0 51px;
+      padding: 20px 0 0 51px;
     }
 
     @include vp-767 {
@@ -195,8 +215,6 @@
 
   &__socials {
     margin: 0 0 32px;
-
-
   }
 
   &__copyright {
@@ -205,7 +223,6 @@
 
     @include vp-767 {
       row-gap: 10px;
-
     }
   }
 
@@ -224,4 +241,8 @@
     align-items: center;
     column-gap: 8px;
   }
+
+   &__language-link:hover {
+    color: variables.$color-black-russian;
+}
 }

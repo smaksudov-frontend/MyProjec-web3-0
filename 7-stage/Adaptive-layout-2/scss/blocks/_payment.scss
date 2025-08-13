@@ -18,6 +18,10 @@
     @include vp-1023 {
       padding: 0 0 80px;
     }
+
+    @include vp-767 {
+      padding: 0 0 60px;
+    }
   }
 
   &__title {
@@ -27,7 +31,7 @@
     font-size: 32px;
     line-height: 36px;
 
-    @include vp-1023{
+    @include vp-1023 {
       margin: 0 auto 30px;
       font-size: 22px;
       line-height: 28px;
@@ -65,11 +69,10 @@
   }
 
   &__image {
-
     @include vp-1023 {
-    width: 165px;
-    height: 188px;
-  }
+      width: 165px;
+      height: 188px;
+    }
   }
 
   &__heading {
