@@ -1,0 +1,11 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.advices {
+  &__title {
+    margin: 0 0 60px;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.btn {
+  outline: none;
+  display: block;
+  border-radius: 8px;
+  padding: 10px;
+  color: variables.$color-white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: variables.$color-royal-blue;
+
+  &--invert {
+    color: variables.$color-royal-blue;
+    background-color: variables.$color-white;
+  }
+}
