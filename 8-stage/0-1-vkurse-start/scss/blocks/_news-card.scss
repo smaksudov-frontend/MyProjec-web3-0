@@ -1,0 +1,101 @@
+.news-card {
+  width: 710px;
+  min-height: 240px;
+  height: 100%;
+  background: $color-solitude;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+
+  @include vp-1023 {
+    width: 320px;
+    min-height: 354px;
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    width: 320px;
+  }
+
+  &__img {
+    width: 340px;
+    height: 240px;
+
+    @include vp-1023 {
+      width: 320px;
+      height: 190px;
+    }
+  }
+
+  &__content {
+    padding: 24px 38px 24px 32px;
+    display: flex;
+    flex-direction: column;
+
+    @include vp-1023 {
+      padding: 10px 15px 15px;
+    }
+  }
+
+  &__content-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: $color-storm-grey;
+    margin: 0 0 16px;
+
+    @include vp-1023 {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__views {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__views-icon,
+  &__time-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-black-russian;
+
+    @include vp-1023 {
+      margin: 0 0 15px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-black-russian;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.banner-subscription {
+  width: 450px;
+  min-height: 160px;
+  border-radius: 6px;
+  background: url("../images/img-banner-bg.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../images/img-banner-bg@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  @include vp-1023 {
+    width: 688px;
+    background: url("../images/img-banner-bg-tablet.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../images/img-banner-bg-tablet@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-767 {
+    width: 320px;
+    min-height: 126px;
+    background: url("../images/img-banner-bg-mobile.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../images/img-banner-bg-mobile@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__wrap {
+    background: $color-endeavour-50;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @include vp-1023 {
+      gap: 38px;
+    }
+
+    @include vp-767 {
+      padding: 20px;
+      gap: 32px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 233px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $color-white;
+
+    @include vp-1023 {
+      max-width: 431px;
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__btn {
+    @include vp-1023 {
+      height: 44px;
+    }
+
+    @include vp-767 {
+      height: 30px;
+    }
+  }
+}

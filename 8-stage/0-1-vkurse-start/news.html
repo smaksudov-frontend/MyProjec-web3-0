@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Вкурсе / Новости</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+            <svg class="header__logo-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Новости</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Статьи</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Мнения</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Эфиры</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Инфографика</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Редакция</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__btn-wrapper">
+            <a class="header__search" href="#" aria-label="Ссылка на поиск">
+              <svg class="header__search-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+            <a class="header__location" href="#" aria-label="Ссылка на геолокацию">
+              <svg class="header__location-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-geo"></use>
+              </svg>
+            </a>
+            <button class="header__burger" type="button" aria-label="Кнопка открытия меню">
+              <svg class="header__burger-icon" width="32" height="18" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#" aria-label="Ссылка на главную страницу">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link breadcrumbs__link--active">Новости</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="news">
+        <div class="container">
+          <h1 class="news__title">Новости</h1>
+          <div class="news__content">
+            <div class="news__list-wrap">
+              <ul class="news__list">
+                <li class="news__list-item">
+                  <a class="news-card" href="#">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="images/img-card-tablet.jpg 1x, images/img-card-tablet@2x.jpg 2x">
+                      <img class="news-card__img" src="images/img-card.jpg" srcset="images/img-card@2x.jpg 2x" width="340" height="240" alt="Изображение в карточке новости">
+                    </picture>
+                    <div class="news-card__content">
+                      <div class="news-card__content-top">
+                        <time class="news-card__data" datetime="2024-04-11">
+                          11 апреля 2024
+                        </time>
+                        <div class="news-card__views">
+                          <span class="news-card__views-text">1.2К</span>
+                          <svg class="news-card__views-icon" width="16" height="10" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-eye"></use>
+                          </svg>
+                        </div>
+                        <div class="news-card__time">
+                          <span class="news-card__time-text">5 минут</span>
+                          <svg class="news-card__time-icon" width="16" height="16" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-clock"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <h2 class="news-card__title">&laquo;Яндекс&raquo; протестирует сервис облачного гейминга &laquo;Плюс Гейминг&raquo;</h2>
+                      <p class="news-card__text">Компания начала принимать заявки на&nbsp;участие в&nbsp;тестах</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="news__list-item">
+                  <a class="news-card" href="#">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="images/img-card-2-tablet.jpg 1x, images/img-card-2-tablet@2x.jpg 2x">
+                      <img class="news-card__img" src="images/img-card-2.jpg" srcset="images/img-card-2@2x.jpg 2x" width="340" height="240" alt="Изображение в карточке новости">
+                    </picture>
+                    <div class="news-card__content">
+                      <div class="news-card__content-top">
+                        <time class="news-card__data" datetime="2024-04-11">
+                          11 апреля 2024
+                        </time>
+                        <div class="news-card__views">
+                          <span class="news-card__views-text">8К</span>
+                          <svg class="news-card__views-icon" width="16" height="10" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-eye"></use>
+                          </svg>
+                        </div>
+                        <div class="news-card__time">
+                          <span class="news-card__time-text">2 минуты</span>
+                          <svg class="news-card__time-icon" width="16" height="16" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-clock"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <h2 class="news-card__title">69% россиян хотели&nbsp;бы работать в&nbsp;гибридном формате</h2>
+                      <p class="news-card__text">Среди преимуществ работы из&nbsp;офисы&nbsp;&mdash; оборудование, зона отдыха и&nbsp;штатный психолог</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="news__list-item">
+                  <a class="news-card" href="#">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="images/img-card-3-tablet.jpg 1x, images/img-card-3-tablet@2x.jpg 2x">
+                      <img class="news-card__img" src="images/img-card-3.jpg" srcset="images/img-card-3@2x.jpg 2x" width="340" height="240" alt="Изображение в карточке новости">
+                    </picture>
+                    <div class="news-card__content">
+                      <div class="news-card__content-top">
+                        <time class="news-card__data" datetime="2024-04-11">
+                          11 апреля 2024
+                        </time>
+                        <div class="news-card__views">
+                          <span class="news-card__views-text">10.4К</span>
+                          <svg class="news-card__views-icon" width="16" height="10" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-eye"></use>
+                          </svg>
+                        </div>
+                        <div class="news-card__time">
+                          <span class="news-card__time-text">6 минуты</span>
+                          <svg class="news-card__time-icon" width="16" height="16" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-clock"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <h2 class="news-card__title">Конкурент Neuralink Илон Маска начал набор пациентов для клинических испытаний нейроимпланта</h2>
+                      <p class="news-card__text">Более 100 организаций выразили готовность к&nbsp;участию в&nbsp;испытаниях</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="news__list-item">
+                  <a class="news-card" href="#">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="images/img-card-4-tablet.jpg 1x, images/img-card-4-tablet@2x.jpg 2x">
+                      <img class="news-card__img" src="images/img-card-4.jpg" srcset="images/img-card-4@2x.jpg 2x" width="340" height="240" alt="Изображение в карточке новости">
+                    </picture>
+                    <div class="news-card__content">
+                      <div class="news-card__content-top">
+                        <time class="news-card__data" datetime="2024-04-11">
+                          11 апреля 2024
+                        </time>
+                        <div class="news-card__views">
+                          <span class="news-card__views-text">12К</span>
+                          <svg class="news-card__views-icon" width="16" height="10" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-eye"></use>
+                          </svg>
+                        </div>
+                        <div class="news-card__time">
+                          <span class="news-card__time-text">8 минуты</span>
+                          <svg class="news-card__time-icon" width="16" height="16" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-clock"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <h2 class="news-card__title">В&nbsp;России представили первую мультимодальную модель ИИ&nbsp;OmniFusion 1.1</h2>
+                      <p class="news-card__text">У&nbsp;модели&nbsp;&mdash; открытый исходный код, ее&nbsp;можно использовать в&nbsp;коммерческих целях</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <button class="news__btn btn btn--secondary" type="button">Показать еще</button>
+            </div>
+            <div class="news__connection">
+              <div class="banner-subscription">
+                <div class="banner-subscription__wrap">
+                  <h2 class="banner-subscription__title">Подпишитесь на наши новости</h2>
+                  <button class="banner-subscription__btn btn" type="button">Подписаться</button>
+                </div>
+              </div>
+              <div class="news__social">
+                <h3 class="news__title-social">Поделиться:</h3>
+                <ul class="social social--bg">
+                  <li class="social__list">
+                    <a class="social__link" href="#" aria-label="Ссылка на вконтакте">
+                      <svg class="social__link-icon" width="16" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a class="social__link" href="#" aria-label="Ссылка на телеграмм">
+                      <svg class="social__link-icon" width="15" height="12" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-tg"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a class="social__link" href="#" aria-label="Ссылка поделиться">
+                      <svg class="social__link-icon" width="19" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-link"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <a class="footer__logo-link" href="#" aria-label="Ссылка на главную">
+            <svg class="footer__logo-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Мнения</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Эфиры</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Инфографика</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">О СМИ </a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Редакция</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+          </ul>
+          <div class="footer__connection"> 
+            <ul class="social">
+              <li class="social__list">
+                <a class="social__link" href="#" aria-label="Ссылка на вконтакте">
+                  <svg class="social__link-icon" width="17" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-vk-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__list">
+                <a class="social__link" href="#" aria-label="Ссылка на телеграмм">
+                  <svg class="social__link-icon" width="15" height="12" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__list">
+                <a class="social__link" href="#" aria-label="Ссылка на одноклассники">
+                  <svg class="social__link-icon" width="9" height="14" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__list">
+                <a class="social__link" href="#" aria-label="Ссылка на youtube">
+                  <svg class="social__link-icon" width="13" height="10" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-yt"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer__copyright">© 2004-2024 ООО "Вкурсе-Медиа"</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

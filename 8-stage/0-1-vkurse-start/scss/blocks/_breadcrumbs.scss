@@ -1,0 +1,49 @@
+.breadcrumbs {
+  padding: 40px 0 0;
+  margin: 0 0 10px 0;
+
+  @include vp-1023 {
+    margin: 0 0 12px 0;
+  }
+
+  @include vp-767 {
+    padding: 20px 0 0;
+    margin: 0 0 8px 0;
+  }
+
+  &__list {
+    display: flex;
+    gap: 19px;
+  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  &__item {
+    position: relative;
+  }
+  
+  &__link {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    position: relative;
+    color: $color-storm-grey-1;
+  }
+  
+  &__link--active {
+    color: #1E222E;
+  }
+  
+  &__link:not(.breadcrumbs__link--active)::after  {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: $color-storm-grey-1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -11px;
+  }
+}
