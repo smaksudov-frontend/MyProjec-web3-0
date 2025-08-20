@@ -20,6 +20,7 @@
   &__logo-link {
     display: flex;
     margin-right: auto;
+    transform: translateY(-5px);
   }
 
   &__logo-image {
@@ -32,10 +33,10 @@
   &__box {
     display: flex;
     align-items: center;
-    margin: 0 24px 0 0;
+    margin: 5px 24px 0 0;
     border: 1px solid variables.$color-hawkes-blue;
     border-radius: 12px;
-    column-gap: 20px;
+    gap: 5px;
     padding: 5px;
 
     @include vp-1023 {
@@ -45,25 +46,23 @@
       display: block;
     }
 
-    @include vp-767 {
-      padding: 0;
-      margin: 0;
-      display: block;
-    }
+ 
   }
 
-  &__btn {
-    width: 128px;
-  }
+
 
   &__language-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
     outline: none;
     display: flex;
     align-items: center;
     column-gap: 12px;
     border: 1px solid variables.$color-hawkes-blue;
     border-radius: 12px;
-    padding: 17px 22px 17px 21px;
+    margin: 5px 0 0 0 ;
+    padding: 18px 24px 18px 21px;
 
     @include vp-1023 {
       display: none;
@@ -84,8 +83,22 @@
     background-color: variables.$color-white-smoke-2;
     border-color: variables.$color-hawkes-blue;
   }
+  
+  &__btn {
+  padding: 14px 24px ;
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: variables.$color-black-russian;
+  }
 
   &__btn--active {
+    background-color: variables.$color-black-russian;
+    color: variables.$color-white;
+
     @include vp-1023 {
       display: none;
     }
