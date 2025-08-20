@@ -12,6 +12,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: $color-white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 img {
